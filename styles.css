@@ -1,0 +1,164 @@
+/* Estilos Globais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Primeira Seção */
+.header-section.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.horizontal-images img {
+    width: 50px; /* Ajuste conforme necessário */
+    margin-right: 10px;
+    filter: grayscale(100%) opacity(0.8); /* Preto e branco com transparência */
+    transition: all 0.3s ease-in-out;
+}
+
+.horizontal-images img:hover {
+    filter: grayscale(0%) opacity(1); /* Colorido ao passar o mouse */
+}
+
+.header-text {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon, .user-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 10px;}
+
+.search-icon, .user-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Segunda Seção */
+.header-section.second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px;
+    background-color: #fff;
+    padding-left: 120px;
+    padding-right: 120px;
+    position: relative; /* Necessário para o pseudo-elemento ficar relativo a essa seção */
+}
+
+.header-section.second::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px; /* Posiciona a linha logo abaixo da seção */
+    height: 3px; /* Define a espessura da linha */
+    background: linear-gradient(to right, #FFD459,orange, #FF5733, #C700C7, #017AC2); /* Cria o gradiente */
+}
+
+
+.nascar-logo {
+    width: 130px; /* Ajuste conforme necessário */
+}
+
+.categories {
+    flex-grow: 1;
+    text-align: center;
+}
+.categories ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Geduli', sans-serif;
+    padding-right: 80px;
+    font-size: 14px;
+}
+
+.categories ul li a:hover {
+        text-decoration: underline;
+        color: #094aab;
+      
+}
+
+/* Terceira Seção */
+.header-section.third {
+    display: flex; /* Definindo flex para alinhamento */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 0px 20px;
+    background-color: #fff; /* Cor de fundo */
+    padding-left: 120px; /* Ajusta o padding à esquerda */
+    padding-right: 120px; /* Ajusta o padding à direita */
+    position: relative; /* Permite posicionar elementos filhos */
+}
+
+.quick-links {
+    display: flex; /* Alinha os links em linha */
+    align-items: center; /* Alinha verticalmente no centro */
+}
+
+.quick-links ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Exibe os itens da lista em linha */
+    gap: 15px; /* Espaço entre os links */
+    margin-left: 10px; /* Margem à esquerda */
+}
+
+.quick-links ul li {
+    position: relative; /* Para permitir que a linha seja posicionada corretamente */
+    padding-right: 7px; /* Adiciona um espaço à direita para evitar que a linha grude no texto */
+}
+
+.quick-links ul li:not(:last-child)::after {
+    content: ''; /* Adiciona um elemento vazio após o link */
+    position: absolute; /* Posiciona a linha relativa ao item da lista */
+    right: 0; /* Posiciona a linha na borda direita do link */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Corrige a posição vertical */
+    width: 2px; /* Define a largura da linha */
+    height: 20px; /* Define a altura da linha */
+    background-color: gray; /* Cor da linha */
+}
+
+.quick-links span {
+    color: rgb(228, 0, 43); /* Cor do texto */
+    font-size: 15px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+}
+
+.quick-links ul li a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    font-size: 13px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+}
+
+.quick-links ul li a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
