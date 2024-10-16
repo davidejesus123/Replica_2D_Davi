@@ -105,7 +105,8 @@ header {
     color: #000000;
     font-weight: bold;
     font-family: 'Akwe Pro Bold', sans-serif;
-    padding-right: 85px;
+    padding-right: 37px;
+    padding-left:  37px;
     font-size: 14px;
 }
 
