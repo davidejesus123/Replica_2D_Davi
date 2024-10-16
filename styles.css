@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Estilos Globais */
 body {
     margin: 0;
@@ -7,6 +13,8 @@ body {
 header {
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Akwe Pro Bold', sans-serif;
+    
 }
 
 /* Primeira Seção */
@@ -59,10 +67,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7px 20px;
+    padding: 10px 20px;
     background-color: #fff;
     padding-left: 120px;
     padding-right: 120px;
+    padding-bottom: 15px;
     position: relative; /* Necessário para o pseudo-elemento ficar relativo a essa seção */
 }
 
@@ -111,7 +120,7 @@ header {
     display: flex; /* Definindo flex para alinhamento */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    padding: 0px 20px;
+    padding: 7px 20px;
     background-color: #fff; /* Cor de fundo */
     padding-left: 120px; /* Ajusta o padding à esquerda */
     padding-right: 120px; /* Ajusta o padding à direita */
@@ -162,3 +171,26 @@ header {
 .quick-links ul li a:hover {
     text-decoration: underline; /* Sublinha ao passar o mouse */
 }
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('fonts/AkwePro-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('fonts/AkwePro-Bold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akwe Pro';
+    src: url('fonts/AkwePro-Black.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
