@@ -81,7 +81,7 @@ header {
     left: 0;
     right: 0;
     bottom: -1px; /* Posiciona a linha logo abaixo da seção */
-    height: 3px; /* Define a espessura da linha */
+    height: 2.5px; /* Define a espessura da linha */
     background: linear-gradient(to right, #FFD459,orange, #FF5733, #C700C7, #017AC2); /* Cria o gradiente */
 }
 
@@ -177,8 +177,10 @@ header {
 .session-one {
     display: flex;
     justify-content: space-between;
-    padding: 130px 130px; /* Padding para alinhar esquerda e direita */
-    align-items: center; /* Centraliza verticalmente */
+    padding:10px;
+    padding-left: 130px;
+    padding-right: 130px;
+    align-items: center;
 }
 
 .content {
@@ -197,13 +199,15 @@ header {
 .subtitle {
     color: red;
     font-size: 16px;
-    margin-bottom: 10px; /* Espaçamento entre subtítulo e título */
+    margin-bottom: 5px; /* Espaçamento entre subtítulo e título */
+    margin-top: 100px;
 }
 
 .main-title {
-    font-size: 40px;
+    font-size: 30px;
     color: black;
     margin-bottom: 15px; /* Espaçamento entre título e linha colorida */
+    font-weight:900;
 }
 
 
@@ -212,9 +216,9 @@ header {
     cursor:pointer;
 }
 
-.gradient-line {
+.gradient-2 {
     width: 115%; /* A linha se estende ao lado esquerdo da imagem */
-    height: 2px;
+    height: 3px;
     background: linear-gradient(to right, #FFD459, #FF4500, #FF00FF, #017AC2);
     margin-bottom: 15px; /* Espaçamento entre a linha e o pequeno texto */
 }
@@ -227,7 +231,6 @@ header {
 
 .image-section {
     max-width: 70%; /* A imagem ocupa o espaço restante */
-    margin-top: -120px;
 }
 
 .large-image {
@@ -251,6 +254,56 @@ header {
 .text-section ul li:hover{
     color: #011dd6;
 }
+
+.news-section {
+    display: flex;
+    justify-content: space-between; /* Distribui as imagens horizontalmente com espaço entre elas */
+    padding: 20px 120px; /* Espaçamento lateral */
+}
+
+.news-item {
+    text-align: center; /* Centraliza o texto abaixo de cada imagem */
+    overflow: hidden; /* Garante que a imagem não saia do contêiner */
+}
+
+.news-item img {
+    width: 240px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+    transition: transform 0.3s ease; /* Animação suave */
+}
+
+.news-title {
+    font-size: 14px; /* Ajuste o tamanho do texto conforme necessário */
+    color: #232323; /* Cor do texto */
+    font-weight: bold;
+}
+
+.news-item img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% ao passar o mouse */
+}
+
+.editor-title {
+    padding-left:120px ;
+    padding-right:120px ;
+}
+
+.editor-picks {
+    font-size: 18px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 10px; /* Espaçamento entre título e linha colorida */
+    margin-top: 20px;
+}
+
+
+.gradient-3 {
+    width: 100%; 
+    height: 1.5px;
+    background: linear-gradient(to right, #FFD459, #FF4500, #FF00FF, #017AC2);
+    margin-bottom: 15px; /* Espaçamento entre a linha e o pequeno texto */
+}
+
 
 
 @font-face {
