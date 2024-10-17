@@ -7,14 +7,12 @@
 /* Estilos Globais */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Akwe Pro - bold', sans-serif;
 }
 
 header {
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    font-family: 'Akwe Pro Bold', sans-serif;
-    
 }
 
 /* Primeira Seção */
@@ -104,7 +102,6 @@ header {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
-    font-family: 'Akwe Pro Bold', sans-serif;
     padding-right: 37px;
     padding-left:  37px;
     font-size: 14px;
@@ -158,7 +155,7 @@ header {
 
 .quick-links span {
     color: rgb(228, 0, 43); /* Cor do texto */
-    font-size: 15px; /* Tamanho da fonte */
+    font-size: 14px; /* Tamanho da fonte */
     font-weight: bold; /* Negrito */
 }
 
@@ -209,6 +206,7 @@ header {
     color: black;
     margin-bottom: 15px; /* Espaçamento entre título e linha colorida */
     font-weight:900;
+    font-family: 'Akwe Pro - black', sans-serif;
 }
 
 
@@ -295,6 +293,7 @@ header {
     color: black;
     margin-bottom: 10px; /* Espaçamento entre título e linha colorida */
     margin-top: 20px;
+    font-family: 'Akwe Pro - black', sans-serif;
 }
 
 
@@ -302,30 +301,88 @@ header {
     width: 100%; 
     height: 1.5px;
     background: linear-gradient(to right, #FFD459, #FF4500, #FF00FF, #017AC2);
-    margin-bottom: 15px; /* Espaçamento entre a linha e o pequeno texto */
+    margin-bottom: 10px; /* Espaçamento entre a linha e o pequeno texto */
 }
 
+/* Estilização da seção principal */
+.editor-picks-section {
+    display: flex;
+    gap: 20px; /* Espaço entre a notícia principal e as secundárias */
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 20px;
+}
 
+/* Estilização da notícia principal */
+.main-news {
+    width: 50%; /* Ocupa cerca de 50% da tela */
+}
+
+.main-news img {
+    width: 100%; /* A imagem ocupa todo o espaço da div */
+    height: auto;
+}
+
+.main-news-description {
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 10px;
+    color: black;
+}
+
+/* Estilização das notícias secundárias */
+.side-news {
+    width: 45%; /* Ocupa o restante do espaço da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.side-news-item {
+    display: flex;
+    align-items: flex-start; /* Alinhado ao topo, para quebrar se necessário */
+    margin-bottom: 10px; /* Espaçamento entre as notícias secundárias */
+    align-items: center;
+}
+
+.side-news-item img {
+    width: 185px; /* Aumenta o tamanho das imagens menores */
+    height: auto;
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.side-news-title {
+    font-size: 16px;
+    font-weight: 900;
+    color: black;
+    max-width: 400px; /* Limite de largura para quebra de linha */
+    word-wrap: break-word; /* Força a quebra de linha se o texto ultrapassar o limite */
+    
+}
+.main-news img, .side-news-item img {
+    transition: transform 0.3s ease;
+}
+
+.main-news img:hover, .side-news-item img:hover {
+    transform: scale(1.05); /* Aumenta levemente a imagem ao passar o mouse */}
 
 @font-face {
-    font-family: 'Akwe Pro';
-    src: url('fonts/AkwePro-Regular.otf') format('truetype');
+    font-family: 'Akwe Pro - regular';
+    src: url('https://github.com/davidejesus123/Replica_2D_Davi/blob/main/files/ROHH%20%20Akwe%20Pro%20Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Akwe Pro';
-    src: url('fonts/AkwePro-Bold.otf') format('truetype');
+    font-family: 'Akwe Pro - bold';
+    src: url('https://github.com/davidejesus123/Replica_2D_Davi/blob/main/files/ROHH%20%20Akwe%20Pro%20Bold.otf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Akwe Pro';
-    src: url('fonts/AkwePro-Black.otf') format('truetype');
+    font-family: 'Akwe Pro - black';
+    src: url('https://github.com/davidejesus123/Replica_2D_Davi/blob/main/files/ROHH%20%20Akwe%20Pro%20Black.otf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
-
-
